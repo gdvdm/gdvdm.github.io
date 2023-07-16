@@ -38,49 +38,250 @@
 
     <div class="row">
       
-          <div class="col-md-10 col-md-offset-1">
-
-                <p style="color:black; font-family:Sans-Serif; font-size:16px">                         
-                  The field of generative models has recently witnessed significant progress, with diffusion models showing remarkable performance in image generation. In light of this success, there is a growing interest in exploring the application of diffusion models to other modalities. One such challenge is the generation of coherent videos of complex scenes, which poses several technical difficulties, such as capturing temporal dependencies and generating long, high-resolution videos. This paper proposes GD-VDM, a novel diffusion model for video generation, demonstrating promising results. GD-VDM is based on a two-phase generation process involving generating depth videos followed by a novel diffusion Vid2Vid model that generates a coherent real-world video. We evaluated GD-VDM on the Cityscapes dataset and found that it generates more diverse and complex scenes compared to natural baselines, demonstrating the efficacy of our approach.
-                </p> <br><hr><br>
-      
-          </div>
+      <div class="col-md-10 col-md-offset-1">
+          <p style="color:black; font-family:Sans-Serif; font-size:16px"> 
+            The field of generative models has recently witnessed significant progress, with diffusion models showing remarkable performance in image generation. In light of this success, there is a growing interest in exploring the application of diffusion models to other modalities. One such challenge is the generation of coherent videos of complex scenes, which poses several technical difficulties, such as capturing temporal dependencies and generating long, high-resolution videos. This paper proposes GD-VDM, a novel diffusion model for video generation, demonstrating promising results. GD-VDM is based on a two-phase generation process involving generating depth videos followed by a novel diffusion Vid2Vid model that generates a coherent real-world video. We evaluated GD-VDM on the Cityscapes dataset and found that it generates more diverse and complex scenes compared to natural baselines, demonstrating the efficacy of our approach.
+          </p> 
+        <br>
+        
+        <hr>
+        <br>
+      </div>
+    
     </div>
 
   </div>
-<!-- </div> -->
-
 
 <!-- <div id="portfolio"> -->
   
   <div class="inner">
-    <!-- <div class="section-title center"> -->
+      <!-- <div class="section-title center"> -->
       <div class="section-title text-center center">
-      
-  <!-- <div class="col-md-20 col-md-offset--100"> -->
+      <!-- <div class="col-md-20 col-md-offset--100"> -->
     
-      <p style="color:black; font-family:Sans-Serif; font-size:24px;"> <i>Random</i> samples from SUN3D Dataset </p>
-        <br><br> 
+      <p style="color:black; font-family:Sans-Serif; font-size:25px;"> Random samples from Citiscapes Dataset </p>
 
-      <table border=1 justify="center" cellpadding="20px" style="width: 100%">
+      <br><br> 
+
+      <table border=1 justify="center" cellpadding="10px" style="width: 100%">
         <tr>
-          <th style=" background-color:white;position: sticky; top: 0; width: 15%; text-align: center; padding: 10px; color:black">Ground-Truth</th>
-          <th style=" background-color:white; position: sticky; top: 0;width: 15%; text-align: center; padding: 10px; color:black"> GD-VDM Denoised (Ours) </th>
-          <th style=" background-color:white; position: sticky; top: 0;width: 15%; text-align: center; padding: 10px; color:black"> GD-VDM (Ours) </th>
-          <th style="background-color:white;position: sticky; top: 0;width: 15%; text-align: center; padding: 10px; color:black"> Depth map </th>
-          <th style="background-color:white;position: sticky; top: 0;width: 15%; text-align: center; padding: 10px; color:black">VDM</th>
-          <th style="background-color:white;position: sticky; top: 0;width: 15%; text-align: center; padding: 10px; color:black">MoCoGAN</th>
+            <th style="background-color:white;position: sticky; top: 0; width: 5%; text-align: center; padding: 10px; color:white; border-color: white;"></th>
+            <th style=" background-color:white;position: sticky; top: 0; width: 15%; text-align: center; padding: 10px; color:black">Ground-Truth</th>
+            <th style=" background-color:white; position: sticky; top: 0;width: 15%; text-align: center; padding: 10px; color:black"> GD-VDM Denoised (Ours) </th>
+            <th style=" background-color:white; position: sticky; top: 0;width: 15%; text-align: center; padding: 10px; color:black"> GD-VDM (Ours) </th>
+            <!-- <th style="background-color:white;position: sticky; top: 0;width: 15%; text-align: center; padding: 10px; color:black"> Depth map </th> -->
+            <th style="background-color:white;position: sticky; top: 0;width: 15%; text-align: center; padding: 10px; color:black">VDM</th>
+            <th style="background-color:white;position: sticky; top: 0;width: 15%; text-align: center; padding: 10px; color:black">MoCoGAN</th>
+            <th style="background-color:white;position: sticky; top: 0; width: 5%; text-align: center; padding: 10px; color:white; border-color: white;"></th>
         </tr>
 
         <tr>
-            <td style="width: 20%; text-align: center; padding: 10px; color:black"><img src="data/ground_truth/true_14vid_num_0.gif"></td>
-            <td style="width: 20%; text-align: center; padding: 10px; color:black"><img src="data/ground_truth/true_14vid_num_0.gif"></td>
-            <td style="width: 20%; text-align: center; padding: 10px; color:black"><img src="data/ground_truth/true_14vid_num_0.gif"></td>
-            <td style="width: 20%; text-align: center; padding: 10px; color:black"><img src="data/ground_truth/true_14vid_num_0.gif"></td>
-            <td style="width: 20%; text-align: center; padding: 10px; color:black"><img src="data/ground_truth/true_14vid_num_0.gif"></td>
-            <td style="width: 20%; text-align: center; padding: 10px; color:black"><img src="data/ground_truth/true_14vid_num_0.gif"></td>
-        </tr>
+            <td style=" background-color:white;position: sticky; top: 0; width: 5%; text-align: center; padding: 10px; color:white; border-color: white;"></td>
+
+            <td style="width: 15%; text-align: center; padding: 10px; color:black">
+                <img src="https://chechiklab.biu.ac.il/~brachalior/projects/video-gan/gdvdm/data/ground_truth/true_5vid_num_3.gif">
+
+                <img src="https://chechiklab.biu.ac.il/~brachalior/projects/video-gan/gdvdm/data/ground_truth/true_14vid_num_0.gif">
+
+                <img src="https://chechiklab.biu.ac.il/~brachalior/projects/video-gan/gdvdm/data/ground_truth/true_21vid_num_4.gif">
+
+                <img src="https://chechiklab.biu.ac.il/~brachalior/projects/video-gan/gdvdm/data/ground_truth/true_28vid_num_2.gif"> <br> <br>
+
+                <img src="https://chechiklab.biu.ac.il/~brachalior/projects/video-gan/gdvdm/data/ground_truth/true_40vid_num_3.gif">
+                
+                <img src="https://chechiklab.biu.ac.il/~brachalior/projects/video-gan/gdvdm/data/ground_truth/true_42vid_num_0.gif">
+
+                <img src="https://chechiklab.biu.ac.il/~brachalior/projects/video-gan/gdvdm/data/ground_truth/true_57vid_num_7.gif">
+
+                <img src="https://chechiklab.biu.ac.il/~brachalior/projects/video-gan/gdvdm/data/ground_truth/true_74vid_num_2.gif"> <br> <br>
+
+
+                <img src="https://chechiklab.biu.ac.il/~brachalior/projects/video-gan/gdvdm/data/ground_truth/true_75vid_num_5.gif">
+                
+                <img src="https://chechiklab.biu.ac.il/~brachalior/projects/video-gan/gdvdm/data/ground_truth/true_103vid_num_0.gif">
+
+                <img src="https://chechiklab.biu.ac.il/~brachalior/projects/video-gan/gdvdm/data/ground_truth/true_104vid_num_5.gif">
+
+                <img src="https://chechiklab.biu.ac.il/~brachalior/projects/video-gan/gdvdm/data/ground_truth/true_122vid_num_1.gif"> <br> <br>
+
+            </td>
+
+            <!-- gd_vdm_denoised -->
+
+            <td style="width: 15%; text-align: center; padding: 10px; color:black">
+              <img src="https://chechiklab.biu.ac.il/~brachalior/projects/video-gan/gdvdm/data/gd_vdm_denoised/ours_denoised_fake_0_num_0.gif">
+
+              <img src="https://chechiklab.biu.ac.il/~brachalior/projects/video-gan/gdvdm/data/gd_vdm_denoised/ours_denoised_fake_0_num_1.gif">
+
+              <img src="https://chechiklab.biu.ac.il/~brachalior/projects/video-gan/gdvdm/data/gd_vdm_denoised/ours_denoised_fake_0_num_2.gif">
+
+              <img src="https://chechiklab.biu.ac.il/~brachalior/projects/video-gan/gdvdm/data/gd_vdm_denoised/ours_denoised_fake_0_num_5.gif">  <br><br>
+
+              <img src="https://chechiklab.biu.ac.il/~brachalior/projects/video-gan/gdvdm/data/gd_vdm_denoised/ours_denoised_fake_0_num_6.gif">
+              
+              <img src="https://chechiklab.biu.ac.il/~brachalior/projects/video-gan/gdvdm/data/gd_vdm_denoised/ours_denoised_fake_0_num_8.gif">
+
+              <img src="https://chechiklab.biu.ac.il/~brachalior/projects/video-gan/gdvdm/data/gd_vdm_denoised/ours_denoised_fake_1_num_2.gif">
+              
+              <img src="https://chechiklab.biu.ac.il/~brachalior/projects/video-gan/gdvdm/data/gd_vdm_denoised/ours_denoised_fake_1_num_3.gif"> <br><br>
+
+
+              <img src="https://chechiklab.biu.ac.il/~brachalior/projects/video-gan/gdvdm/data/gd_vdm_denoised/ours_denoised_fake_1_num_4.gif">
+              
+              <img src="https://chechiklab.biu.ac.il/~brachalior/projects/video-gan/gdvdm/data/gd_vdm_denoised/ours_denoised_fake_1_num_7.gif">
+
+              <img src="https://chechiklab.biu.ac.il/~brachalior/projects/video-gan/gdvdm/data/gd_vdm_denoised/ours_denoised_fake_2_num_2.gif">
+              
+              <img src="https://chechiklab.biu.ac.il/~brachalior/projects/video-gan/gdvdm/data/gd_vdm_denoised/ours_denoised_fake_2_num_8.gif">
+
+            </td>
+            
+            <td style="width: 15%; text-align: center; padding: 10px; color:black">
+
+              <img src="https://chechiklab.biu.ac.il/~brachalior/projects/video-gan/gdvdm/data/gd_vdm/ours_fake_0_num_0.gif">
+
+              <img src="https://chechiklab.biu.ac.il/~brachalior/projects/video-gan/gdvdm/data/gd_vdm/ours_fake_0_num_1.gif">
+
+              <img src="https://chechiklab.biu.ac.il/~brachalior/projects/video-gan/gdvdm/data/gd_vdm/ours_fake_0_num_2.gif">
+
+              <img src="https://chechiklab.biu.ac.il/~brachalior/projects/video-gan/gdvdm/data/gd_vdm/ours_fake_0_num_5.gif">  <br><br>
+
+              <img src="https://chechiklab.biu.ac.il/~brachalior/projects/video-gan/gdvdm/data/gd_vdm/ours_fake_0_num_6.gif">
+
+              <img src="https://chechiklab.biu.ac.il/~brachalior/projects/video-gan/gdvdm/data/gd_vdm/ours_fake_0_num_8.gif">
+
+              <img src="https://chechiklab.biu.ac.il/~brachalior/projects/video-gan/gdvdm/data/gd_vdm/ours_fake_1_num_2.gif">
+
+              <img src="https://chechiklab.biu.ac.il/~brachalior/projects/video-gan/gdvdm/data/gd_vdm/ours_fake_1_num_3.gif"> <br><br>
+
+              <img src="https://chechiklab.biu.ac.il/~brachalior/projects/video-gan/gdvdm/data/gd_vdm/ours_fake_1_num_4.gif">
+              
+              <img src="https://chechiklab.biu.ac.il/~brachalior/projects/video-gan/gdvdm/data/gd_vdm/ours_fake_1_num_7.gif">
+
+              <img src="https://chechiklab.biu.ac.il/~brachalior/projects/video-gan/gdvdm/data/gd_vdm/ours_fake_2_num_2.gif">
+              
+              <img src="https://chechiklab.biu.ac.il/~brachalior/projects/video-gan/gdvdm/data/gd_vdm/ours_fake_2_num_8.gif">
+            </td>
+            
+            <!-- VDM -->
+            <td style="width: 15%; text-align: center; padding: 10px; color:black">
+              
+              <img src="https://chechiklab.biu.ac.il/~brachalior/projects/video-gan/gdvdm/data/vdm/model-21_fake_1vid_num_4.gif">
+              
+              <img src="https://chechiklab.biu.ac.il/~brachalior/projects/video-gan/gdvdm/data/vdm/model-21_fake_4vid_num_6.gif">
+
+            <img src="https://chechiklab.biu.ac.il/~brachalior/projects/video-gan/gdvdm/data/vdm/model-21_fake_20vid_num_3.gif">
+
+            <img src="https://chechiklab.biu.ac.il/~brachalior/projects/video-gan/gdvdm/data/vdm/model-21_fake_26vid_num_0.gif"> <br> <br>
+
+            <img src="https://chechiklab.biu.ac.il/~brachalior/projects/video-gan/gdvdm/data/vdm/model-21_fake_35vid_num_6.gif">
+            <img src="https://chechiklab.biu.ac.il/~brachalior/projects/video-gan/gdvdm/data/vdm/model-21_fake_47vid_num_5.gif">
+            <img src="https://chechiklab.biu.ac.il/~brachalior/projects/video-gan/gdvdm/data/vdm/model-21_fake_48vid_num_3.gif">
+            <img src="https://chechiklab.biu.ac.il/~brachalior/projects/video-gan/gdvdm/data/vdm/model-21_fake_53vid_num_3.gif"> <br> <br>
+
+            
+            <img src="https://chechiklab.biu.ac.il/~brachalior/projects/video-gan/gdvdm/data/vdm/model-21_fake_106vid_num_3.gif">
+            <img src="https://chechiklab.biu.ac.il/~brachalior/projects/video-gan/gdvdm/data/vdm/model-21_fake_107vid_num_0.gif">
+            <img src="https://chechiklab.biu.ac.il/~brachalior/projects/video-gan/gdvdm/data/vdm/model-21_fake_128vid_num_1.gif">
+            <img src="https://chechiklab.biu.ac.il/~brachalior/projects/video-gan/gdvdm/data/vdm/model-21_fake_156vid_num_1.gif"> <br> <br>
+
+          </td>
+
+            <!-- mocogan -->
+            <td style="width: 15%; text-align: center; padding: 10px; color:black">
+                <img src="https://chechiklab.biu.ac.il/~brachalior/projects/video-gan/gdvdm/data/mocogan/generator_33000_vid_68.gif">
+
+                <img src="https://chechiklab.biu.ac.il/~brachalior/projects/video-gan/gdvdm/data/mocogan/generator_33000_vid_93.gif">
+
+                <img src="https://chechiklab.biu.ac.il/~brachalior/projects/video-gan/gdvdm/data/mocogan/generator_33000_vid_132.gif">
+
+                <img src="https://chechiklab.biu.ac.il/~brachalior/projects/video-gan/gdvdm/data/mocogan/generator_33000_vid_253.gif"> <br> <br>
+
+                <img src="https://chechiklab.biu.ac.il/~brachalior/projects/video-gan/gdvdm/data/mocogan/generator_33000_vid_295.gif">
+                <img src="https://chechiklab.biu.ac.il/~brachalior/projects/video-gan/gdvdm/data/mocogan/generator_33000_vid_334.gif">
+                <img src="https://chechiklab.biu.ac.il/~brachalior/projects/video-gan/gdvdm/data/mocogan/generator_33000_vid_339.gif">
+                <img src="https://chechiklab.biu.ac.il/~brachalior/projects/video-gan/gdvdm/data/mocogan/generator_33000_vid_341.gif"> <br> <br>
+
+              
+                <img src="https://chechiklab.biu.ac.il/~brachalior/projects/video-gan/gdvdm/data/mocogan/generator_33000_vid_444.gif">
+                <img src="https://chechiklab.biu.ac.il/~brachalior/projects/video-gan/gdvdm/data/mocogan/generator_33000_vid_584.gif">
+                <img src="https://chechiklab.biu.ac.il/~brachalior/projects/video-gan/gdvdm/data/mocogan/generator_33000_vid_612.gif">
+                <img src="https://chechiklab.biu.ac.il/~brachalior/projects/video-gan/gdvdm/data/mocogan/generator_33000_vid_635.gif"> <br> <br>
+          </td>
+            
+
+          <td style="background-color:white;position: sticky; top: 0; width: 5%; text-align: center; padding: 10px; color:white; border-color: white;"> </td>
+
+     </tr>
+        
     </table>
+
+            <br><hr><br>
+          <p style="color:black; font-family:Sans-Serif; font-size:25px;"> Generating Videos from Depth maps (depth, gd-vdm, denoised gd-vdm) </p>
+        
+          <table border=0 justify="center" cellpadding="10px" style="width: 100%">
+
+              <tr>
+                <td style="background-color:white;position: sticky; top: 0; width: 35%; text-align: center; padding: 10px; color:white; border-color: white;"> </td>
+
+                <td style="width: 15%; text-align: center; padding: 10px; color:black;">
+
+                  
+                  <br>
+                  <img src="https://chechiklab.biu.ac.il/~brachalior/projects/video-gan/gdvdm/data/depth_maps/depth_fake_0_num_0.gif" width="100">
+                  <img src="https://chechiklab.biu.ac.il/~brachalior/projects/video-gan/gdvdm/data/gd_vdm/ours_fake_0_num_0.gif" width="100">
+                  <img src="https://chechiklab.biu.ac.il/~brachalior/projects/video-gan/gdvdm/data/gd_vdm_denoised/ours_denoised_fake_0_num_0.gif" width="100">
+
+                  <br><br>
+                  <img src="https://chechiklab.biu.ac.il/~brachalior/projects/video-gan/gdvdm/data/depth_maps/depth_fake_0_num_1.gif" width="100">
+                  <img src="https://chechiklab.biu.ac.il/~brachalior/projects/video-gan/gdvdm/data/gd_vdm/ours_fake_0_num_1.gif" width="100">
+                  <img src="https://chechiklab.biu.ac.il/~brachalior/projects/video-gan/gdvdm/data/gd_vdm_denoised/ours_denoised_fake_0_num_1.gif" width="100">
+
+                  <br><br>
+
+                  <img src="https://chechiklab.biu.ac.il/~brachalior/projects/video-gan/gdvdm/data/depth_maps/depth_fake_0_num_2.gif" width="100">
+                  <img src="https://chechiklab.biu.ac.il/~brachalior/projects/video-gan/gdvdm/data/gd_vdm/ours_fake_0_num_2.gif" width="100">
+                  <img src="https://chechiklab.biu.ac.il/~brachalior/projects/video-gan/gdvdm/data/gd_vdm_denoised/ours_denoised_fake_0_num_2.gif" width="100">
+
+                  <br><br>
+                  <img src="https://chechiklab.biu.ac.il/~brachalior/projects/video-gan/gdvdm/data/depth_maps/depth_fake_0_num_5.gif" width="100">
+                  <img src="https://chechiklab.biu.ac.il/~brachalior/projects/video-gan/gdvdm/data/gd_vdm/ours_fake_0_num_5.gif" width="100">
+
+                  <img src="https://chechiklab.biu.ac.il/~brachalior/projects/video-gan/gdvdm/data/gd_vdm_denoised/ours_denoised_fake_0_num_5.gif" width="100">
+
+                  <br><br>
+                </td>
+
+                <td style="width: 15%; text-align: center; padding: 10px; color:black;">
+
+                  <img src="https://chechiklab.biu.ac.il/~brachalior/projects/video-gan/gdvdm/data/depth_maps/depth_fake_0_num_6.gif" width="100">
+
+                  <img src="https://chechiklab.biu.ac.il/~brachalior/projects/video-gan/gdvdm/data/gd_vdm/ours_fake_0_num_6.gif" width="100">
+
+                  <img src="https://chechiklab.biu.ac.il/~brachalior/projects/video-gan/gdvdm/data/gd_vdm_denoised/ours_denoised_fake_0_num_6.gif" width="100">
+
+                  <br><br>
+                  <img src="https://chechiklab.biu.ac.il/~brachalior/projects/video-gan/gdvdm/data/depth_maps/depth_fake_0_num_8.gif" width="100">
+                  <img src="https://chechiklab.biu.ac.il/~brachalior/projects/video-gan/gdvdm/data/gd_vdm/ours_fake_0_num_8.gif" width="100">
+
+                  <img src="https://chechiklab.biu.ac.il/~brachalior/projects/video-gan/gdvdm/data/gd_vdm_denoised/ours_denoised_fake_0_num_8.gif" width="100">
+
+                  <br><br>
+                  <img src="https://chechiklab.biu.ac.il/~brachalior/projects/video-gan/gdvdm/data/depth_maps/depth_fake_1_num_2.gif" width="100">
+                  <img src="https://chechiklab.biu.ac.il/~brachalior/projects/video-gan/gdvdm/data/gd_vdm/ours_fake_1_num_2.gif" width="100">
+                  <img src="https://chechiklab.biu.ac.il/~brachalior/projects/video-gan/gdvdm/data/gd_vdm_denoised/ours_denoised_fake_1_num_2.gif" width="100">
+                  
+                  <br><br>
+                  <img src="https://chechiklab.biu.ac.il/~brachalior/projects/video-gan/gdvdm/data/depth_maps/depth_fake_1_num_3.gif" width="100">
+                  <img src="https://chechiklab.biu.ac.il/~brachalior/projects/video-gan/gdvdm/data/gd_vdm/ours_fake_1_num_3.gif" width="100">
+                  <img src="https://chechiklab.biu.ac.il/~brachalior/projects/video-gan/gdvdm/data/gd_vdm_denoised/ours_denoised_fake_1_num_3.gif" width="100">
+
+                </td>
+
+                <td style="background-color:white;position: sticky; top: 0; width: 35%; text-align: center; padding: 10px; color:white; border-color: white;"> </td>
+
+              </tr>
+          </table>
 
 
   </div>	
@@ -96,5 +297,6 @@
 <script type="text/javascript" src="js/jqBootstrapValidation.js"></script> 
 <script type="text/javascript" src="js/contact_me.js"></script> 
 <script type="text/javascript" src="js/main.js"></script>
+
 </body>
 </html>
